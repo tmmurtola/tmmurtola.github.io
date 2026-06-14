@@ -1,5 +1,116 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    background-color: whitesmoke;
+}
+
+header {
+    min-height: 30px;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: transparent;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.content .left, .right {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 760px) {
+    section {
+        flex-direction: column;
+    }
+
+    .content .left, .right {
+        width: 95%;
+    }
+}
+
+
+#intro_image_container {
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#intro_image_container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    background-color: transparent;
+}
+
+#intro_heading_container {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    line-height: 1.25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+
+#intro_heading_container h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+#buttons {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button {
+    margin: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 3px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.button a {
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: whitesmoke;
+}
+
+footer {
+    min-height: 30px;
+    padding: 0.5rem 1rem;
+    /*position: absolute;-->
+    bottom: 0;*/
+    font-size: 0.9rem;
 }
